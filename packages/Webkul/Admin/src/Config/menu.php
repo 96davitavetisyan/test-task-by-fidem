@@ -348,4 +348,14 @@ return [
         'sort'       => 9,
         'icon'       => 'icon-configuration',
     ],
+    /**
+     * Api Response.
+     */
+    [
+        'key' => 'api-response',
+        'name' => 'Speed Information',
+        'route' => 'admin.api-response',
+        'sort' => 1,
+        'icon' => 'icon-sales',
+    ],
 ];

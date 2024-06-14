@@ -54,3 +54,9 @@ require 'notification-routes.php';
  * Remaining routes.
  */
 require 'rest-routes.php';
+
+use Webkul\Admin\Http\Controllers\APIResponseController;
+Route::group(['middleware' => ['admin'], 'prefix' => config('app.admin_url')], function () {
+
+    Route::get('api-response', [APIResponseController::class, 'index'])->name('admin.api-response');
+});
